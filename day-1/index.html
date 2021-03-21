@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+
+    <!--===============styles==============-->
+    <style>
+        .flex-box-container {
+            display: flex;
+            flex-direction: row;
+            background-color: aqua;
+        }
+
+        .flex-box-container>div {
+            background-color: azure;
+            width: 100px;
+            margin: 30px;
+            text-align: center;
+            line-height: 50px;
+
+        }
+
+        .reverse-box-container {
+            background-color: black;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .reverse-box-container>div {
+            background-color: whitesmoke;
+            margin: 30px;
+            width: 100px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .colum-box-container {
+            background-color: wheat;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .colum-box-container>div {
+            background-color: thistle;
+            margin: 30px;
+            line-height: 50px;
+            text-align: center;
+            width: auto;
+        }
+
+        /* Responsive flexbox */
+        @media(max-width: 900px) {
+            .flex-box-container {
+                flex-direction:column;
+            }
+
+            .reverse-box-container {
+                flex-direction:column;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Day-1(Flex-Box-Using CSS)</h1>
+    <h4>Flex-Box with row direction:</h4>
+    <div class="flex-box-container">
+        <div>PHP</div>
+        <div>JAVASCRIPT</div>
+        <div>JQUERY</div>
+        <div>HTML</div>
+        <div>CSS</div>
+    </div>
+    <br>
+    <h4> Flex-Box with row-reverse direction:</h4>
+    <div class="reverse-box-container">
+        <div>PHP</div>
+        <div>JAVASCRIPT</div>
+        <div>JQUERY</div>
+        <div>HTML</div>
+        <div>CSS</div>
+    </div>
+    <br>
+    <h4> Flex-Box with column direction:</h4>
+    <div class="colum-box-container">
+        <div>PHP</div>
+        <div>JAVASCRIPT</div>
+        <div>JQUERY</div>
+        <div>HTML</div>
+        <div>CSS</div>
+    </div>
+</body>
+
+</html>
