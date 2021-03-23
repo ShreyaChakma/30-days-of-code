@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Design(Day-2)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- ========= CSS STYLES ========= -->
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            background-color: lightskyblue;
+        }
+
+        .flex-container>div {
+            line-height: 40px;
+            padding-left: 50px;
+            margin: 30px;
+
+        }
+
+        .img-section>img {
+            height: 100px;
+            padding-top: 50px;
+            padding-left: 20px;
+        }
+
+        /* Responsive */
+        @media(max-width: 900px) {
+            .flex-container {
+                flex-direction: column;
+            }
+
+            .flex-container > div {
+                flex-direction: column;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <h4>Day 2 (30-days-of-coding)</h4>
+    <br>
+    <p>Topics : Using Flexbox </p>
+    <br>
+    <div class="flex-container">
+        <div class="img-section">
+            <img src="https://i.pinimg.com/originals/eb/7e/20/eb7e20e646f5b7ec9ed4f8f78a5dee8f.png ">
+        </div>
+        <br>
+        <div class="content-section">
+            <p>CSS is the language we use to style an HTML Document.</p>
+            <p>Css describes how HTML elements should be displayed.</p>
+            <p>This tutorial will teach you CSS basic to advance. </p>
+            <button type="button" class="btn btn-success">Start Learning CSS now &raquo;</button>
+        </div>
+    </div>
+</body>
+
+</html>
